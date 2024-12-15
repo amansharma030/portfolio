@@ -1,0 +1,70 @@
+.black_theme {
+  --background-primary: #1e1f26;
+  --background-secondary: #262834d1;
+  --background-teritory: #5c5959;
+  --color-primary: #fff;
+  --shadow-color-primary: #0006;
+}
+.white_theme {
+  --background-primary: #fff;
+  --background-secondary: #afafaf33;
+  --background-teritory: #9494944a;
+  --color-primary: #000;
+  --shadow-color-primary: #0006;
+}
+.color_div {
+  background: radial-gradient(circle, blue, var(--background-primary));
+  border: none;
+  border-radius: 50%;
+  box-shadow: 3px 0 347px blue;
+  height: 200px;
+  opacity: .5;
+  width: 200px;
+}
+.App {
+  background-color: var(--background-primary);
+  color: #fff;
+  font-family: Courier New, Courier, monospace;
+  min-height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+:not(svg):not(svg *) {
+  color: var(--color-primary);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
